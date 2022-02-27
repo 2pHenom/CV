@@ -3,71 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <title>2pHenom CV</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <table cellspacing="15">
-        <tr>
-            <td>
-                <img src="myphoto.jpg" width="300" height="400" alt="Моё фото">
-            </td>
-            <td>
+    <div class="container">
+        <div class="info">
+
+            <img src="myphoto.jpg" alt="Моё фото" class="avatar">
+            <div class="info-text">
                 <h1>Павел Медведев</h1>
-                <p><em> Я начинающий <strong>программист</strong> </em></p>
-                <p> Я люблю путешествовать, играть на гитаре, петь, и программировать</p>
-            </td>
-        </tr>
-    </table>
+                <p>Я начинающий <strong>программист Web-разработчик.</strong></p>
+                <p> Я люблю путешествовать, совершенствовать знания иностранных языков, и программировать.</p>
+                <h4>Мои социальные сети</h4>
+                
+                        <a href="https://www.facebook.com/profile.php?id=100078396994390" target="_blank"> Facebook</a>
+                        |
+                        <a href="https://www.linkedin.com/in/pavel-medvedev-63a65888" target="_blank"> LinkedIn</a>         
+            </div>        
+        </div>
+            
+        <div class="card bg-yellow">   
+            <h2>Мои навыки</h2>
+                <ol class="list">
+                <li>HTML</li> 
+                <li>CSS</li>
+                <li>Java Script</li>  
+                </ol>
+           
+        </div>
+        <div class="card bg-green">
+        <h2>Опыт работы</h2>
+            <table class="table">
+                <!--<tr>
+                    <th>Компания</th>
+                    <th>Должность</th>
+                    <th>Год</th>
+                </tr>-->
+                <tr>
+                    <td><a href="https://www.siemens.com/global/en.html" target="_blank">SIEMENS AG</a></td>
+                    <td>Business Development Manager</td>
+                    <td>2010 - Present</td>
+                </tr>
+                <tr>
+                    <td><a href="https://uhe.gov.ua/" target="_blank">UkrHydroEnergo</a></td>
+                    <td>Operator of Main Controling Board of Hydro Power Plant</td>
+                    <td>2009 - 2010</td>
+                </tr>             
+            </table>
+        </div>
+        <div class="card bg-red">
+            <h2>Образование</h2>
+                <table class="table">
+                    <!--<tr>
+                        <th>Компания</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>-->
+                    <tr>
+                        <td><a href="https://kpi.ua/en/fmm" target="_blank">Kyiv Polytechnic Institute</a></td>
+                        <td>Master of Management of Organizations</td>
+                        <td>2006 - 2009</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://kpi.ua/en/fea" target="_blank">Kyiv Polytechnic Institute</a></td>
+                        <td>Dipl. Eng. Electric Power Plants</td>
+                        <td>2003 - 2009</td>
+                    </tr>             
+                </table>
+            </div>
+       
+        <div class="contact">
+            <h2>Связаться со мной</h2>
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите ваше имя...">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш e-mail:</label>
+                        <input type="email" id="email" placeholder="Введите e-mail...">
+                    </div>
+                </div>
+                <div class="form-group">   
+                    <label for="text">Ваше сообщение:</label>
+                    <textarea  id="text" rows="5"></textarea>
+                </div> 
+                <input class="btn" type="submit" value="Связаться!">
+            
+            </form>
+        </div>
+        <div class="position">
+            <div class="box"></div>
+        </div>
+    </div>
     
-    
-    <hr>
-    <h2>Мои социальные сети</h2>
-        <ul>
-          <li><a href="https://www.facebook.com/profile.php?id=100078396994390" target="_blank"> Facebook</a></li>  
-          <li><a href="https://www.linkedin.com/in/pavel-medvedev-63a65888" target="_blank"> LinkedIn</a></li>           
-        </ul>
-    <hr>
-    <h2>Мои хобби</h2>
-        <ol>
-           <li>Путешествия</li> 
-           <li>Игра на гитаре</li> 
-        </ol>
-    <hr>
-    <h2>Опыт работы</h2>
-    <table border="2">
-        <tr>
-            <th>Компания</th>
-            <th>Должность</th>
-            <th>Год</th>
-        </tr>
-        <tr>
-            <td>SIEMENS</td>
-            <td>Business Development Manager</td>
-            <td>2010 - Present</td>
-        </tr>
-        <tr>
-            <td>UkrHydroEnergo</td>
-            <td>Operator of Main Controling Board of Hydro Power Plant</td>
-            <td>2009 - 2010</td>
-        </tr>
-        
-    </table>
-    <hr>
-    
-    <h2>Связаться со мной</h2>
-    <form action="/">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите ваше имя...">
-        <br>
-        <label for="email">Ваш E-Mail:</label>
-        <input type="email" id="email" placeholder="Введите E-Mail...">
-        <br>
-        <label for="text">Ваше сообщение:</label>
-        <br>
-        <textarea  id="text" rows="5"></textarea>
-        <br>
-        <input type="submit">
-        
-    </form>
+
+    <div style="margin-bottom: 500px;">
+    </div>
 </body>
 </html>
 
